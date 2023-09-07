@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Temp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PT Serif', serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(185, 48, 50);
+        }
+
+        main {
+            height: 88%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-card {
+            width: 45%;
+            height: 100%;
+        }
+
+        .left-card img {
+            width: 20rem;
+            margin: 33px 30px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            box-shadow: 20px 20px 40px black;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            box-shadow: 0 0 10px black;
+            background-color: white;
+            margin: 20px 20px;
+            height: 60vh;
+            width: 60%;
+        }
+
+        .right-card {
+            height: 100%;
+            width: 25rem;
+        }
+
+        .circles {
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-1 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .circle-2 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: rgb(51, 62, 92);
+            border: 2px solid transparent;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .circle-3 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: rgb(79, 153, 143);
+            border: 2px solid transparent;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .circle-4 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: red;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .right-card-text {
+            height: 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .right-card-text h1 {
+            color: black;
+            font-weight: 300;
+        }
+
+        .right-card-text p {
+            display: flex;
+            justify-content: center;
+            margin: 20px 20px;
+            font-size: 22px;
+            color: rgba(56, 48, 48, 0.993);
+            font-weight: 300;
+        }
+
+        .right-bottom-text {
+            height: 7rem;
+            width: 100%;
+        }
+
+        .right-bottom-text .price {
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .right-bottom-text .price p {
+            color: black;
+            font-size: 25px;
+        }
+
+
+        .right-bottom-text #btn {
+            height: 3rem;
+            width: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: black;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="left-card">
+                <img
+                    src="https://i5.walmartimages.com/asr/56ffa95d-5553-450f-9219-dd72e9113d41_1.e0c58177707d12da0f7e5bfa20cbb4c2.jpeg">
+            </div>
+            <div class="right-card">
+                <div class="circles">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="circle-4"></div>
+                </div>
+                <div class="right-card-text">
+                    <h1>Adidas Originals</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, nam soluta voluptate repellat
+                        vel numquam molestiae, dolore aliquam magni fugit, modi asperiores delectus quo est optio! Ipsum
+                        praesentium veniam vel.</p>
+                </div>
+                <div class="right-bottom-text">
+                    <div class="price">
+                        <p>21$</p>
+                        <button id="btn">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
